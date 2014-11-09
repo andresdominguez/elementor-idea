@@ -1,0 +1,45 @@
+<idea-plugin version="2">
+  <id>com.karateca.protractorTester</id>
+  <name>Protractor tester</name>
+  <version>1.0</version>
+  <vendor email="code@karateca.com" url="http://www.andresdominguez.com">Andres Dominguez</vendor>
+
+  <description><![CDATA[
+    Test your locators using protractor's element explorer.
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="TestLocator" class="com.karateca.protractor.TestLocatorAction"
+            text="Test selected locator"
+            description="Test the selected locator with the element explorer"
+            icon="/protractorIcon.png">
+      <keyboard-shortcut keymap="$default" first-keystroke="shift meta P"/>
+      <add-to-group group-id="EditorPopupMenu"/>
+    </action>
+  </actions>
+
+</idea-plugin>
