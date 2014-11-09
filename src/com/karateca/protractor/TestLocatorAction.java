@@ -37,7 +37,7 @@ public class TestLocatorAction extends AnAction {
     }
 
     final AsyncLocatorTester tester = new AsyncLocatorTester(
-        new ElementExplorerReader()
+        new ElementorReader()
     );
 
     tester.addResultsReadyListener(new ChangeListener() {

@@ -9,15 +9,15 @@ import javax.swing.event.ChangeListener;
 import java.io.IOException;
 
 public class AsyncLocatorTester {
-  private final JsonReader jsonReader;
+  private final ElementorReader elementorReader;
   private static final String KEY_PATTERN = "\"?(.*?)\"?";
   private static final String VALUE_PATTERN = "(^\\s*\"?)(.*?)(\\s*\"?$)";
   private static final String RESULTS_PATTERN = "(\\{\"results\":\\s*\\{)(.+)(}})";
   private final EventDispatcher<ChangeListener> myEventDispatcher =
       EventDispatcher.create(ChangeListener.class);
 
-  public AsyncLocatorTester(JsonReader jsonReader) {
-    this.jsonReader = jsonReader;
+  public AsyncLocatorTester(ElementorReader elementorReader) {
+    this.elementorReader = elementorReader;
   }
 
   public void testLocator(final String locator) {
@@ -42,7 +42,7 @@ public class AsyncLocatorTester {
   private Pair<String, String> submitRequest(String locator) {
     String json;
     try {
-      json = jsonReader.read(locator);
+      json = elementorReader.read(locator);
     } catch (IOException e) {
       return new Pair<String, String>(
           null,
@@ -64,7 +64,7 @@ public class AsyncLocatorTester {
     String keySubstring = keyAndValue.substring(0, i);
     String valueSubstring = keyAndValue.substring(i + 1);
 
-    return new Pair<String, String>(
+    return Pair.create(
         keySubstring.replaceAll(KEY_PATTERN, "$1"),
         valueSubstring.replaceAll(VALUE_PATTERN, "$2")
     );

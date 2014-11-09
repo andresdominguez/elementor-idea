@@ -8,11 +8,10 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
 
-public class ElementExplorerReader implements JsonReader {
+public class ElementorReader {
 
   private static final String baseUrl = "http://localhost:13000/testSelector?popupInput=";
 
-  @Override
   public String read(String locator) throws IOException {
     StringBuilder sb = new StringBuilder();
 
