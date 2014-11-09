@@ -1,11 +1,11 @@
 <idea-plugin version="2">
-  <id>com.karateca.protractorTester</id>
+  <id>com.karateca.elementorIdea</id>
   <name>Protractor tester</name>
   <version>1.0</version>
   <vendor email="code@karateca.com" url="http://www.andresdominguez.com">Andres Dominguez</vendor>
 
   <description><![CDATA[
-    Test your locators using protractor's element explorer.
+    Test your protractor locators using elementor.
     ]]></description>
 
   <change-notes><![CDATA[
@@ -17,7 +17,7 @@
   <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
   <idea-version since-build="131"/>
 
-  <depends>com.intellij.modules.platform</depends>
+ <depends>com.intellij.modules.platform</depends>
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
