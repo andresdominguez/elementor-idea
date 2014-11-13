@@ -37,7 +37,9 @@
             text="Test selected locator"
             description="Test the selected locator with the element explorer"
             icon="/protractorIcon.png">
-      <keyboard-shortcut keymap="$default" first-keystroke="shift meta P"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl P"/>
+      <keyboard-shortcut keymap="Mac OS X" first-keystroke="shift meta P"/>
+      <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="shift meta P"/>
       <add-to-group group-id="EditorPopupMenu"/>
     </action>
   </actions>
