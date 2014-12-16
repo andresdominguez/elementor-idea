@@ -1,16 +1,28 @@
 <idea-plugin version="2">
   <id>com.karateca.elementorIdea</id>
-  <name>Protractor tester</name>
+  <name>elementor</name>
   <version>1.0</version>
   <vendor email="code@karateca.com" url="http://www.andresdominguez.com">Andres Dominguez</vendor>
 
   <description><![CDATA[
-    Test your protractor locators using elementor.
+    <h1>elementor</h1>
+    <p>
+      A plugin to connect to <a href="https://github.com/andresdominguez/elementor">elementor</a>
+      an improved element explorer for Protractor.
+    </p>
+    <h2>Instructions</h2>
+    <ul>
+      <li>Start elementor</li>
+      <li>Select a locator or expression that you test against Protractor</li>
+      <li>Press SHIFT Ctrl P (Command SHIFT P on a Mac) or right click and select "Test selected
+        locator" to run.
+      </li>
+      <li>See the results in a popup</li>
+    </ul>
     ]]></description>
 
   <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+    Version 1.0: Initial version.
     ]]>
   </change-notes>
 
