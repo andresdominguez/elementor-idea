@@ -6,10 +6,9 @@ An intellij / webstorm plugin to test your protractor locators with
 
 ## How to install it
 
-* Download [elementor-idea.jar](https://github.com/andresdominguez/elementor-idea/blob/master/elementor-idea.jar)
-to a local directory.
 * From IntelliJ or Webstorm go to Settings (Preferences... on a mac) >
-Plugins > Install plugin from disk... and select the jar file.
+Plugins > Click on Browse repositories > Search for `elementor` and install
+* Restart your IDE
 
 ## How to use it
 
